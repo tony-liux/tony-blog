@@ -342,9 +342,9 @@ params:
         clientId: c0d27f9ef9a65059d078
         clientSecret: 'ac6b1d62029f8aedac1214b6db7077f9dd73b963'
         enable: yes
-        owner: tony-liux/tony-blog
+        owner: tony-liux
         platform: github
-        repo: comments
+        repo: tony-blog
     fontawesome: yes
     fraction: yes
     hiddenFromHomePage: no
