@@ -1,0 +1,575 @@
+baseURL: https://example.com
+defaultContentLanguage: "zh-cn"
+languageCode: "zh-CN"
+hasCJKLanguage: true
+title: Tony's blog
+theme: FeelIt
+enableRobotsTXT: yes
+enableGitInfo: yes
+enableEmoji: yes
+googleAnalytics: ''
+ignoreErrors:
+  - err-missing-comment-accesstoken
+  - err-missing-oembed-accesstoken
+  - error-remote-getjson
+languages:
+  en:
+    copyright: This work is licensed under a Creative Commons Attribution-NonCommercial
+      4.0 International License.
+    hasCJKLanguage: no
+    languageCode: en
+    languageName: English
+    menu:
+      main:
+        - identifier: posts
+          name: Posts
+          post: ''
+          pre: ''
+          title: ''
+          url: /posts/
+          weight: 1
+        - identifier: tags
+          name: Tags
+          post: ''
+          pre: ''
+          title: ''
+          url: /tags/
+          weight: 2
+        - identifier: categories
+          name: Categories
+          post: ''
+          pre: ''
+          title: ''
+          url: /categories/
+          weight: 3
+        - identifier: documentation
+          name: Docs
+          post: ''
+          pre: ''
+          title: ''
+          url: /categories/documentation/
+          weight: 4
+        - identifier: about
+          name: About
+          post: ''
+          pre: ''
+          title: ''
+          url: /about/
+          weight: 5
+        - identifier: github
+          name: ''
+          post: ''
+          pre: <i class='fab fa-github fa-fw'></i>
+          title: GitHub
+          url: https://github.com/tony-liux/tony-blog
+          weight: 6
+    paginate: 12
+    params:
+      about:
+        description: 'The best thing about studying statistics is that you get to play in everyone’s backyard'
+        enable: yes
+        param: yes
+        paramTitle: Personal Information
+        parameter:
+          - language: R
+            level: '60'
+          - language: python
+            level: '45'
+        status:
+          - desc: Student
+            faIcon: fas fa-briefcase fa-fw
+            title: Occupation
+          - desc: Chongqing
+            faIcon: fas fa-map-marker-alt
+            title: Location
+      app:
+        iconColor: '#5bbad5'
+        noFavicon: no
+        svgFavicon: '/star.svg'
+        themeColor: '#ffffff'
+        tileColor: '#da532c'
+        title: Tony's Blog
+      description: Tony's Blog
+      home:
+        posts:
+          enable: yes
+          imagePreview: yes
+          paginate: 6
+        profile:
+          avatarURL: /images/head.jpg
+          disclaimer: ''
+          enable: yes
+          gravatarEmail: ''
+          social: no
+          subtitle: Learning and sharing, mainly about statistics
+          title: ''
+          typeit: no
+        rss: 10
+      keywords:
+        - Theme
+        - Hugo
+      search:
+        absoluteURL: no
+        algolia:
+          appID: UAL0NNJWXE
+          index: index.en
+          searchKey: 7b7fbdfb7ee82ee61901f2c6b09b05be
+        contentLength: 4000
+        enable: yes
+        highlightTag: em
+        maxResultLength: 10
+        placeholder: ''
+        snippetLength: 30
+        type: algolia
+    weight: 1
+  zh-cn:
+    copyright: This work is licensed under a Creative Commons Attribution-NonCommercial
+      4.0 International License.
+    hasCJKLanguage: yes
+    languageCode: zh-CN
+    languageName: 简体中文
+    menu:
+      main:
+        - identifier: posts
+          name: 所有文章
+          post: ''
+          pre: ''
+          title: ''
+          url: /posts/
+          weight: 1
+        - identifier: tags
+          name: 标签
+          post: ''
+          pre: ''
+          title: ''
+          url: /tags/
+          weight: 2
+        - identifier: categories
+          name: 分类
+          post: ''
+          pre: ''
+          title: ''
+          url: /categories/
+          weight: 3
+        - identifier: documentation
+          name: 文档
+          pre: ''
+          title: ''
+          url: /categories/documentation/
+          weight: 4
+        - identifier: about
+          name: 关于
+          post: ''
+          pre: ''
+          title: ''
+          url: /about/
+          weight: 5
+        - identifier: github
+          name: ''
+          post: ''
+          pre: <i class='fab fa-github fa-fw'></i>
+          title: GitHub
+          url: https://github.com/tony-liux/tony-blog
+          weight: 6
+    paginate: 12
+    params:
+      about:
+        description: '研究统计学最棒的事情就是你可以在每个人的后院玩耍。'
+        enable: yes
+        param: yes
+        paramTitle: 个人信息
+        parameter:
+          - language: R
+            level: '60'
+          - language: python
+            level: '45'  
+        status:
+          - desc: 学生
+            faIcon: fas fa-briefcase fa-fw
+            title: 职业
+          - desc: 重庆
+            faIcon: fas fa-map-marker-alt
+            title: 地点
+      app:
+        iconColor: '#5bbad5'
+        noFavicon: no
+        svgFavicon: '/star.svg'
+        themeColor: '#ffffff'
+        tileColor: '#da532c'
+        title: Tony's Blog
+      description: Tony's Blog
+      home:
+        posts:
+          enable: yes
+          imagePreview: yes
+          paginate: 6
+        profile:
+          avatarURL: /images/head.jpg
+          disclaimer: ''
+          enable: yes
+          gravatarEmail: ''
+          social: no
+          subtitle: 学习与分享, 主要关于统计学
+          title: ''
+          typeit: yes
+        rss: 10
+      keywords:
+        - Theme
+        - Hugo
+      search:
+        absoluteURL: no
+        algolia:
+          appID: UAL0NNJWXE
+          index: index.zh-cn
+          searchKey: 7b7fbdfb7ee82ee61901f2c6b09b05be
+        contentLength: 4000
+        enable: yes
+        highlightTag: em
+        maxResultLength: 10
+        placeholder: ''
+        snippetLength: 50
+        type: algolia
+    weight: 2
+params:
+  SourceMap: no
+  analytics:
+    enable: no
+    fathom:
+      id: ''
+      server: ''
+    goatcounter:
+      code: ''
+  cdn:
+    data: jsdelivr.yml
+  compatibility:
+    objectFit: no
+    polyfill: no
+  cookieconsent:
+    content:
+      dismiss: ''
+      link: ''
+      message: ''
+    enable: no
+  dateFormat: '2006-01-02'
+  defaultTheme: auto
+  fingerprint: ''
+  footer:
+    author: yes
+    copyright: yes
+    custom: ''
+    enable: yes
+    hugo: yes
+    icp: ''
+    since: 2021
+  gitRepo: https://github.com/tony-liux/tony-blog
+  header:
+    desktopMode: fixed
+    mobileMode: auto
+    title:
+      logo: ''
+      name: Tony's Blog
+      post: ''
+      pre: <i class='fa fa-book fa-fw'></i>
+      rss: yes
+      typeit: no
+  images: /logo.png
+  list:
+    dateFormat: 01-02
+    paginate: 20
+    rss: 10
+  oembed:
+    facebook:
+      accessToken: ''
+    privacy: no
+    twitter:
+      enableDNT: no
+  page:
+    cdnfontawesome: yes
+    code:
+      copy: yes
+      maxShownLines: 10
+    comment:
+      commento:
+        enable: no
+      disqus:
+        enable: no
+        shortname: ''
+      enable: yes
+      facebook:
+        appId: ''
+        enable: no
+        languageCode: ''
+        numPosts: 10
+        width: 100%
+      gitalk:
+        clientId: ''
+        clientSecret: ''
+        enable: no
+        owner: ''
+        repo: ''
+      telegram:
+        color: ''
+        colorful: yes
+        dislikes: no
+        enable: no
+        height: ''
+        limit: 5
+        outlined: no
+        siteID: ''
+      utterances:
+        darkTheme: github-dark
+        enable: no
+        issueTerm: pathname
+        label: ''
+        lightTheme: github-light
+        repo: ''
+      valine:
+        appId: QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI
+        appKey: WBmoGyJtbqUswvfLh6L8iEBr
+        avatar: mp
+        emoji: ''
+        enable: no
+        enableQQ: no
+        highlight: yes
+        lang: ''
+        meta: ''
+        pageSize: 10
+        placeholder: ''
+        recordIP: yes
+        serverURLs: https://leancloud.hugoloveit.com
+        visitor: yes
+      vssue:
+        clientId: c0d27f9ef9a65059d078
+        clientSecret: 'ac6b1d62029f8aedac1214b6db7077f9dd73b963'
+        enable: yes
+        owner: tony-liux
+        platform: github
+        repo: comments
+    fontawesome: yes
+    fraction: yes
+    hiddenFromHomePage: no
+    hiddenFromSearch: no
+    improveArticle: https://github.com/tony-liux/tony-blog/edit/main/exampleSite/content/
+    library:
+      css: {}
+      js: {}
+    lightgallery: no
+    linkToMarkdown: yes
+    mapbox:
+      accessToken: pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ
+      darkStyle: mapbox://styles/mapbox/dark-v10?optimize=true
+      fullscreen: yes
+      geolocate: yes
+      lightStyle: mapbox://styles/mapbox/light-v10?optimize=true
+      navigation: yes
+      scale: yes
+    math:
+      blockLeftDelimiter: ''
+      blockRightDelimiter: ''
+      copyTex: yes
+      enable: no
+      inlineLeftDelimiter: ''
+      inlineRightDelimiter: ''
+      mhchem: yes
+    rssFullText: no
+    ruby: yes
+    seo:
+      images: []
+      publisher:
+        logoUrl: /images/head.jpg
+        name: Tony
+    share:
+      Baidu: no
+      Blogger: no
+      Buffer: no
+      Digg: no
+      Evernote: no
+      Facebook: yes
+      Flipboard: no
+      HackerNews: yes
+      Instapaper: no
+      Line: yes
+      Linkedin: no
+      Mix: no
+      Myspace: no
+      Odnoklassniki: no
+      Pinterest: no
+      Pocket: no
+      Reddit: no
+      Renren: no
+      Skype: no
+      Stumbleupon: no
+      Trello: no
+      Tumblr: no
+      Twitter: yes
+      VK: no
+      Weibo: yes
+      Whatsapp: no
+      Xing: no
+      enable: yes
+    toc:
+      auto: yes
+      enable: yes
+      keepStatic: no
+    twemoji: no
+  pwa:
+    enable: yes
+    version: 1.0.1
+  section:
+    dateFormat: 01-02
+    paginate: 20
+    rss: 10
+  seo:
+    image: /images/Apple-Devices-Preview.webp
+    thumbnailUrl: /images/screenshot.png
+  social:
+    Angellist: ''
+    Bandcamp: ''
+    Behance: ''
+    Bilibili: ''
+    Bitbucket: ''
+    Codepen: ''
+    Deviantart: ''
+    Devto: ''
+    Douban: ''
+    Dribbble: ''
+    Email: xxxx@xxxx.com
+    Facebook: xxxx
+    Fivehundredpx: ''
+    Flickr: ''
+    Foursquare: ''
+    FreeCodeCamp: ''
+    GitHub: xxxx
+    Gitea: ''
+    Gitlab: ''
+    Goodreads: ''
+    Googlescholar: ''
+    Hackernews: ''
+    Instagram: xxxx
+    Jsfiddle: ''
+    Keybase: ''
+    Kickstarter: ''
+    Lastfm: ''
+    Linkedin: ''
+    Mastodon:
+      id: '@xxxx'
+      prefix: https://mastodon.technology/
+    Matrix: ''
+    Medium: ''
+    Mix: ''
+    Odnoklassniki: ''
+    Patreon: ''
+    Paypal: ''
+    Pinterest: ''
+    Quora: ''
+    RSS: yes
+    Reddit: ''
+    Researchgate: ''
+    Resume: ''
+    Skype: ''
+    Slidershare: ''
+    Snapchat: ''
+    Soundcloud: ''
+    Spotify: ''
+    Stackoverflow: ''
+    Steam: ''
+    Strava: ''
+    Telegram: xxxx
+    Thingiverse: ''
+    Tumblr: ''
+    Twitch: ''
+    Twitter: xxxx
+    VK: ''
+    Vine: ''
+    Weibo: ''
+    Whatsapp: ''
+    Wordpress: ''
+    XMPP: ''
+    Xing: ''
+    Youtubechannel: ''
+    Youtubecustom: ''
+    Youtubelegacy: xxxx
+    Zhihu: ''
+    xda: ''
+  typeit:
+    cursorChar: '|'
+    cursorSpeed: 1000
+    duration: -1
+    speed: 100
+  verification:
+    baidu: ''
+    bing: ''
+    google: ''
+    pinterest: ''
+    yandex: ''
+  version: 1.0.X
+markup:
+  goldmark:
+    extensions:
+      definitionList: yes
+      footnote: yes
+      linkify: yes
+      strikethrough: yes
+      table: yes
+      taskList: yes
+      typographer: yes
+    renderer:
+      unsafe: yes
+  highlight:
+    codeFences: yes
+    guessSyntax: yes
+    lineNos: yes
+    lineNumbersInTable: yes
+    noClasses: no
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
+author:
+  email: ''
+  link: ''
+  name: Tony's Blog
+  author: Tony
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+Permalinks:
+  posts: :filename
+privacy:
+  googleAnalytics:
+    anonymizeIP: no
+    disable: no
+    respectDoNotTrack: no
+    useSessionStorage: no
+  instagram: {}
+  twitter:
+    enableDNT: yes
+  youtube:
+    privacyEnhanced: yes
+mediaTypes:
+  text/plain:
+    suffixes: md
+outputFormats:
+  MarkDown:
+    isHTML: no
+    isPlainText: yes
+    mediaType: text/plain
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - MarkDown
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  taxonomyTerm: HTML
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: no

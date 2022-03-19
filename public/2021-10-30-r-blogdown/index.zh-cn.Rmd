@@ -1,0 +1,61 @@
+---
+title: r blogdown and hugo
+author: tony
+date: '2021-10-30'
+categories:
+  - r blogdown
+tags:
+  - r blogdown
+lastmod: '2021-11-01T19:33:20+08:00'
+hiddenFromHomePage: no
+hiddenFromSearch: no
+featuredImagePreview: blogdown.jpg
+toc:
+  enable: yes
+  auto: no
+math:
+  enable: no
+lightgallery: no
+---
+
+在这篇文章中, 我将叙述使用 rblogdown 和 hugo 更新博客的基本流程. 经过测试, 在本博客使用的主题上, 先将 Rmd 文件 knit 为 html, 再由 hugo 渲染会报错. 经过一番探索, 我将方案改为将 Rmd 文件转换为 md 文件, 再由 hugo 渲染.
+
+<!--more-->
+
+## 1 Rmd文件转换
+
+使用如下语句,将文件转为 markdown
+
+``` r
+library(rmarkdown)
+# by not using pandoc to save the meta msg before the markdown document
+# like `title`, `author`, `tags` etc.
+render("./your_file.Rmd", md_document(),run_pandoc = F)
+```
+
+帮助文档: [render](<https://rmarkdown.rstudio.com/docs/reference/render.html>) [md_document](<https://rmarkdown.rstudio.com/docs/reference/md_document.html>)
+
+## 2 测试Rmd
+
+注意到, RStudio 支持同时使用多种语言进行编程, 所以此处我也测试了执行 python
+
+```{r}
+data = iris[,1:4]
+head(data)
+summary(data)
+```
+
+```{r}
+corrplot::corrplot(cor(data),
+         tl.pos = 'd',method='e')
+```
+
+```{r}
+boxplot(data)
+```
+
+```{python}
+print('hello world')
+```
+
+
