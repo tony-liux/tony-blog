@@ -1,4 +1,4 @@
-baseURL: https://example.com
+baseURL: https://tony-blog.netlify.app
 defaultContentLanguage: "zh-cn"
 languageCode: "zh-CN"
 hasCJKLanguage: true
